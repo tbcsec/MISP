@@ -1,3 +1,7 @@
+# This is a fork of the MISP application
+Below describes the implementation of MISP in the TBC environment. This is only a fork of the original MISP application and should not be used in production.
+
+
 MISP - Malware Information Sharing Platform and Threat Sharing
 --------------------------------------------------------------
 
