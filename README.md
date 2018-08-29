@@ -1,6 +1,12 @@
 # This is a fork of the MISP application
-Below describes the implementation of MISP in the TBC environment. This is only a fork of the original MISP application and should not be used in production.
+Below describes the implementation of MISP in the TBC environment. This is only a fork of the original MISP application and should NOT be used in production.
 
+### Implementation
+MISP is the main tool for our Threat Intel Analyst. This application is used to store IoC's that is collected from our customers environment, TBC honeypot networks, or from other security researchers. This data is accessed via the MISP API by utilizing the PyMISP library that the developers of MISP provide. From our LogRhythm Platform Manager, we query the API to pull down the IoC's 
+and alert on any match seen in our customers environment. 
+
+### Technical Details
+We currently have this application installed on an Ubuntu 17.10 OS with MySQL, Apache, and PHP. Upgrades and updates to the MISP application itself is managed by Git. However, there is a section in the web console to upgrade/update the web application. Admin privileges are required to do much of the admin work in MISP and to access the MySQL database where the Threat Intel is stored.
 
 MISP - Malware Information Sharing Platform and Threat Sharing
 --------------------------------------------------------------
