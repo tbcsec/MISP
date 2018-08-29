@@ -8,6 +8,9 @@ and alert on any match seen in our customers environment.
 ### Technical Details
 We currently have this application installed on an Ubuntu 17.10 OS with MySQL, Apache, and PHP. Upgrades and updates to the MISP application itself is managed by Git. However, there is a section in the web console to upgrade/update the web application. Admin privileges are required to do much of the admin work in MISP and to access the MySQL database where the Threat Intel is stored.
 
+### Configurations
+The main config file for the PHP front end is located at /var/www/MISP/app/Config/config.php. This is an important file that the applicatios reads to get the configurations for the IP address for the webserver as well as the base url. Although is it not recommended, we have a self signed cert that is currently being sued to facilitate HTTPS. Certs are located here etc/ssl/private/. Apache also has a conf file located here /etc/apache2/sites-enabled/misp-ssl.conf. MISP has the ability to generate email alerts as threat intel is being fed into MISP. To view the current postfix configuration for the email alerts simply navigate to /etc/postfix/
+
 MISP - Malware Information Sharing Platform and Threat Sharing
 --------------------------------------------------------------
 
