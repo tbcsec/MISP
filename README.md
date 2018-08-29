@@ -11,6 +11,9 @@ We currently have this application installed on an Ubuntu 17.10 OS with MySQL, A
 ### Configurations
 The main config file for the PHP front end is located at /var/www/MISP/app/Config/config.php. This is an important file that the applicatios reads to get the configurations for the IP address for the webserver as well as the base url. Although is it not recommended, we have a self signed cert that is currently being sued to facilitate HTTPS. Certs are located here etc/ssl/private/. Apache also has a conf file located here /etc/apache2/sites-enabled/misp-ssl.conf. MISP has the ability to generate email alerts as threat intel is being fed into MISP. To view the current postfix configuration for the email alerts simply navigate to /etc/postfix/
 
+### Support
+Since this is a completely open source application, most of the support should be in-house with people who are familiar of the technology. However, there is a very helpful community that is willing to answer any questions or concerns about the application here. See the support section below.
+
 MISP - Malware Information Sharing Platform and Threat Sharing
 --------------------------------------------------------------
 
